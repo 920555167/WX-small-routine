@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/list/list",
+    "pages/person/person"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "昊",
+    "navigationBarTextStyle": "black"
+    
+  },
+  "tabBar": {
+    "color": "#EFFFE9",
+    "backgroundColor": "#FF6600",
+    "selectedColor": "#EFFFE9",
+    "list": [
+      {
+        "iconPath": "/image/index.png",
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "selectedIconPath": "/image/index_select.png"
+      },
+      {
+        "iconPath": "/image/list.png",
+        "text": "列表页",
+        "pagePath": "pages/list/list",
+        "selectedIconPath": "/image/list_select.png"
+      },
+      {
+        "iconPath": "/image/persion.png",
+        "text": "个人中心",
+        "pagePath": "pages/person/person",
+        "selectedIconPath": "/image/persion_select.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

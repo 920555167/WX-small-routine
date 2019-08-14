@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="top">
+ 
+  <swiper class="banner_boder" autoplay="true" interval="3000" vertical="true" circular="true">
+    <swiper-item>
+        <image class="banner" src="/image/snow.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+        <image class="banner" src="/image/guang.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+        <image class="banner" src="/image/beike.jpg"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view>
+    <view wx:for="{{article_list}}" wx:for-item="item" class="content" hover-class="content_hover">
+      <view class="pic_box">
+        <image src="{{item.picture}}"> </image>
+      
+      </view>
+      <view class="content_box">
+        <view>
+          <navigator class="title" open-type="reLaunch" url="/pages/list/list?pages='{{index}}'">{{item.title}}</navigator>
+        </view>
+        <text class="description">{{item.description}}</text>
+   
+      </view>
+
+    </view>
+</view>
